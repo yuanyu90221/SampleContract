@@ -1,0 +1,252 @@
+{
+  "contractName": "SampleContract",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "value",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "value_",
+          "type": "uint256"
+        }
+      ],
+      "name": "setValue",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b60d08061001d6000396000f3006060604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fa4f24514604e57806355241077146074575b600080fd5b3415605857600080fd5b605e6094565b6040518082815260200191505060405180910390f35b3415607e57600080fd5b60926004808035906020019091905050609a565b005b60005481565b80600081905550505600a165627a7a723058203638e24994ff1c23220346acbcce7679eff42a257c20edb5c63bf0b81cd0da390029",
+  "deployedBytecode": "0x6060604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fa4f24514604e57806355241077146074575b600080fd5b3415605857600080fd5b605e6094565b6040518082815260200191505060405180910390f35b3415607e57600080fd5b60926004808035906020019091905050609a565b005b60005481565b80600081905550505600a165627a7a723058203638e24994ff1c23220346acbcce7679eff42a257c20edb5c63bf0b81cd0da390029",
+  "sourceMap": "26:249:1:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:249:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;106:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;208:65;;;;;;;;;;;;;;;;;;;;;;;;;;106:17;;;;:::o;208:65::-;262:6;254:5;:14;;;;208:65;:::o",
+  "source": "pragma solidity ^0.4.17;\n\ncontract SampleContract {\n  // This value is visible in etherscan.io explorer\n  uint public value;\n  // Anyone can call this contract and override the value of the previous caller\n  function setValue(uint value_) public {\n      value = value_;\n  }\n}",
+  "sourcePath": "/Users/yuanyu90221/SampleContract/contracts/SampleContract.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/yuanyu90221/SampleContract/contracts/SampleContract.sol",
+      "exportedSymbols": {
+        "SampleContract": [
+          71
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".17"
+          ]
+        },
+        "id": 58,
+        "name": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            71
+          ],
+          "name": "SampleContract",
+          "scope": 72
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "value",
+              "scope": 71,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 59,
+                "name": "ElementaryTypeName",
+                "src": "106:4:1"
+              }
+            ],
+            "id": 60,
+            "name": "VariableDeclaration",
+            "src": "106:17:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "setValue",
+              "payable": false,
+              "scope": 71,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "value_",
+                      "scope": 70,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 61,
+                        "name": "ElementaryTypeName",
+                        "src": "226:4:1"
+                      }
+                    ],
+                    "id": 62,
+                    "name": "VariableDeclaration",
+                    "src": "226:11:1"
+                  }
+                ],
+                "id": 63,
+                "name": "ParameterList",
+                "src": "225:13:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 64,
+                "name": "ParameterList",
+                "src": "246:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 60,
+                              "type": "uint256",
+                              "value": "value"
+                            },
+                            "id": 65,
+                            "name": "Identifier",
+                            "src": "254:5:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 62,
+                              "type": "uint256",
+                              "value": "value_"
+                            },
+                            "id": 66,
+                            "name": "Identifier",
+                            "src": "262:6:1"
+                          }
+                        ],
+                        "id": 67,
+                        "name": "Assignment",
+                        "src": "254:14:1"
+                      }
+                    ],
+                    "id": 68,
+                    "name": "ExpressionStatement",
+                    "src": "254:14:1"
+                  }
+                ],
+                "id": 69,
+                "name": "Block",
+                "src": "246:27:1"
+              }
+            ],
+            "id": 70,
+            "name": "FunctionDefinition",
+            "src": "208:65:1"
+          }
+        ],
+        "id": 71,
+        "name": "ContractDefinition",
+        "src": "26:249:1"
+      }
+    ],
+    "id": 72,
+    "name": "SourceUnit",
+    "src": "0:275:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "8995": {
+      "events": {},
+      "links": {},
+      "address": "0x40de48141ff2d7206345f089ffa73d3a66400a82"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-03-05T07:31:40.372Z"
+}
